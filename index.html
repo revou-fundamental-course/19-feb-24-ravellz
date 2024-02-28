@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="my-bg">
+    <!-- Navbar-Start -->
     <nav class="nav-container">
       <a class="img-container" href="/">
         <img
@@ -19,9 +20,12 @@
         <a href="/#">Home</a>
         <a href="/#our-profile">Our Profile</a>
         <a href="/#portfolio">Portfolio</a>
-        <a href="/">Message Us</a>
+        <a href="/#message-us">Message Us</a>
       </div>
     </nav>
+    <!-- Navbar-End -->
+
+    <!-- Home-start -->
     <section id="home" class="home">
       <div class="home-container">
         <h1>Hi ... Welcome to my website!</h1>
@@ -48,6 +52,9 @@
         </p>
       </div>
     </section>
+    <!-- Home-end -->
+
+    <!-- Vision-Mission-start -->
     <section class="vision-mission">
       <div class="vision-mission-container">
         <h1>Vision & Mission</h1>
@@ -77,6 +84,9 @@
         </div>
       </div>
     </section>
+    <!-- Vision-Mission-end -->
+
+    <!-- Portfolio-start -->
     <section id="portfolio" class="portfolio">
       <div class="portfolio-container">
         <h1>Our Headquarter</h1>
@@ -99,13 +109,107 @@
           </div>
           <div class="carousel-item">
             <div class="carousel-item-container">
-            <img class="japan" src="./img/kfc-japan.jpg" alt="kfc-japan" />
+              <img class="japan" src="./img/kfc-japan.jpg" alt="kfc-japan" />
+            </div>
+            <p>KFC Kentucky</p>
           </div>
-          <p>KFC Kentucky</p>
         </div>
       </div>
     </section>
+    <!-- Portfolio-end -->
+
+    <!-- Message-Us-start -->
+    <section id="message-us" class="message-us">
+      <div class="message-us-container">
+        <div class="table-container">
+          <h1>Message Us</h1>
+          <table>
+            <form>
+              <tr>
+                <td>
+                  <label for="nama">Nama <span>:</span></label>
+                </td>
+                <td>
+                  <input type="text" id="nama" name="nama" placeholder="Nama" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="tgl-lahir">Tanggal lahir <span>:</span></label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="tgl-lahir"
+                    name="tgl-lahir"
+                    placeholder="Masukkan tanggal lahir"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="jenis-kelamin"
+                    >Jenis Kelamin <span>:</span></label
+                  >
+                </td>
+                <td>
+                  <input
+                    class="jenis-kelamin"
+                    type="radio"
+                    id="jenis-kelamin"
+                    name="jenis-kelamin"
+                    value="laki-laki"
+                  />
+                  <label class="jenis-kelamin" for="laki-laki">Laki-laki</label>
+                  <input
+                    class="jenis-kelamin"
+                    type="radio"
+                    id="jenis-kelamin"
+                    name="jenis-kelamin"
+                    value="perempuan"
+                  />
+                  <label class="jenis-kelamin" for="perempuan">Perempuan</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="pesan">Pesan <span>:</span></label>
+                </td>
+                <td>
+                  <input
+                    class="pesan"
+                    type="text"
+                    id="pesan"
+                    name="pesan"
+                    placeholder="Pesan"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="submit">
+                  <input type="submit" value="submit" />
+                </td>
+              </tr>
+            </form>
+          </table>
+        </div>
+        <div class="result-container">
+          <div class="result-content-container">
+            <p>Current time :</p>
+            <br />
+            <p>Nama :</p>
+            <p>Tanggal Lahir :</p>
+            <p>Jenis Kelamin :</p>
+            <p>Pesan :</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Message-Us-end -->
+
+    <!-- Footer-start -->
     <footer></footer>
+    <!-- Footer-end -->
     <script src="./js/script.js"></script>
   </body>
 </html>

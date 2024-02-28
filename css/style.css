@@ -182,7 +182,8 @@ table {
 .home,
 .our-profile,
 .vision-mission,
-.portfolio {
+.portfolio,
+.message-us {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,4 +377,95 @@ table {
 
 .carousel-item p {
   margin-top: 1rem;
+}
+
+/* Message-Us */
+.message-us-container {
+  display: flex;
+  flex-direction: column;
+  width: 80rem;
+  height: 30rem;
+  background-color: var(--red-navbar);
+  border-radius: 1rem;
+  padding: 1rem;
+  font-weight: 500;
+  margin: 0 2rem;
+  color: #fff;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  flex: 45%;
+  justify-content: center;
+  margin-left: 2rem;
+  box-sizing: border-box;
+}
+
+.table-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 9px;
+}
+
+.table-container td {
+  padding: 5px 0;
+}
+
+.table-container td .pesan {
+  height: 10rem;
+}
+
+.table-container .pesan-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.table-container td label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-container td .jenis-kelamin {
+  display: inline;
+  width: auto;
+}
+
+.table-container td input {
+  width: 100%;
+  border-radius: 5px;
+  border-color: #fff;
+  box-sizing: border-box;
+}
+
+.table-container label span {
+  margin-right: 5px;
+}
+
+.table-container .submit {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.result-container {
+  display: flex;
+  flex: 55%;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-content-container {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: 15rem;
+  background-color: var(--red-navbar);
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-weight: 500;
+  margin: 0 2rem;
+  color: #fff;
+  justify-content: center;
 }
