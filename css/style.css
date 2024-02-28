@@ -2,6 +2,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --red: rgba(38, 35, 34, 1);
   --red-navbar: rgba(193, 0, 45, 1);
+  --vanilla: #f5d4b7
 }
 
 html,
@@ -209,6 +210,10 @@ table {
   margin: 0 2rem;
   color: #fff;
   margin-top: 51.2px;
+}
+
+.home-container span {
+  color: var(--vanilla);
 }
 
 .img-side1 {
