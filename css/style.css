@@ -1,5 +1,7 @@
 :root {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --red: rgba(193, 41, 0, 1);
+  --red-navbar: rgba(193, 0, 45, 1);
 }
 
 html,
@@ -142,7 +144,7 @@ table {
   left: 0;
   right: 0;
   z-index: 999;
-  background-color: #fff;
+  background-color: #c1002d;
 }
 
 .nav-container .img-container {
@@ -156,7 +158,6 @@ table {
 .nav-container .img-container .img-size {
   width: 5rem;
   object-fit: cover;
-  clip-path: inset(0 0 3px 0);
 }
 
 .nav-link-container {
@@ -170,7 +171,7 @@ table {
   font-style: none;
   font-size: 1.2rem;
   text-decoration: none;
-  color: #0a0a0a;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -178,27 +179,36 @@ table {
   background-color: rgba(1, 1, 1, 0.482);
 }
 
-.home {
+.home,
+.our-profile,
+.vision-mission,
+.portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   border: 1px solid blue;
   position: relative;
+  background-color: rgba(193, 42, 0, 0.012);
+  background-size: cover;
+  background-position: center;
 }
 
 /* Home Section */
-.home-container {
+.home-container,
+.our-profile-container,
+.vision-mission-container,
+.portfolio-container {
   display: flex;
   flex-direction: column;
   width: 55rem;
   height: 30rem;
-  background-color: rgba(69, 69, 69, 0.607);
+  background-color: var(--red-navbar);
   border-radius: 1rem;
   padding: 1rem;
   font-weight: 500;
-  z-index: 100;
   margin: 0 2rem;
+  color: #fff;
 }
 
 .img-side1 {
@@ -219,4 +229,92 @@ table {
   rotate: -45deg;
   filter: drop-shadow(30px 10px 4px #1e1d1d);
   filter: brightness(0.87);
+}
+
+/* Our Profile */
+.our-profile-container {
+  align-items: center;
+  height: 32rem;
+  margin: 0 2rem;
+}
+
+.our-profile-container h1 {
+  font-size: 2rem;
+}
+
+.our-profile-container p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-align: justify;
+}
+
+.img-our-profile-container {
+  width: 30rem;
+  margin: 1.5rem 0;
+  border: 2px solid #fff;
+}
+
+/* vision-mission */
+.vision-mission-container {
+  align-items: center;
+  padding: 2rem;
+}
+
+.vision-mission-container h1 {
+  font-size: 2rem;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.content-container .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 40%;
+  height: 23rem;
+}
+
+.content-container .img-container img {
+  width: 20rem;
+  filter: drop-shadow(0 0 3px rgb(255, 255, 255));
+}
+
+.content-container .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 60%;
+  height: 23rem;
+  color: #c1002d;
+}
+
+.text-container .vision-container {
+  border: 3px solid #fff;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.text-container .vision-container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-container .mission-container {
+  border: 3px solid #fff;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.text-container .mission-container h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
