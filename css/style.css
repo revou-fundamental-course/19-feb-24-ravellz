@@ -1,6 +1,6 @@
 :root {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  --red: rgba(193, 41, 0, 1);
+  --red: rgba(38, 35, 34, 1);
   --red-navbar: rgba(193, 0, 45, 1);
 }
 
@@ -137,7 +137,7 @@ table {
 .nav-container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 4px double rgb(244, 0, 39);
+  border-bottom: 4px solid var(--red);
   align-items: center;
   position: fixed;
   top: 0;
@@ -188,9 +188,7 @@ table {
   justify-content: center;
   align-items: center;
   height: 100dvh;
-  border: 1px solid blue;
-  position: relative;
-  background-color: rgba(193, 42, 0, 0.012);
+  background-color: #fff;
   background-size: cover;
   background-position: center;
 }
@@ -210,6 +208,7 @@ table {
   font-weight: 500;
   margin: 0 2rem;
   color: #fff;
+  margin-top: 51.2px;
 }
 
 .img-side1 {
@@ -235,8 +234,10 @@ table {
 /* Our Profile */
 .our-profile-container {
   align-items: center;
-  height: 32rem;
+  height: 33.5rem;
   margin: 0 2rem;
+  box-sizing: border-box;
+  margin-top: 51.2px;
 }
 
 .our-profile-container h1 {
@@ -380,6 +381,10 @@ table {
 }
 
 /* Message-Us */
+.message-us {
+  position: relative;
+}
+
 .message-us-container {
   display: flex;
   flex-direction: column;
@@ -468,4 +473,22 @@ table {
   margin: 0 2rem;
   color: #fff;
   justify-content: center;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  background-color: var(--red);
+  bottom: 0;
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.footer h1 {
+  margin-right: 2rem;
 }
