@@ -1,58 +1,17 @@
 // Fungsi nama di homepage
-// let nama_homepage;
 
-// do {
-//   nama_homepage = prompt("Masukkan nama anda");
+let nama_homepage;
+do {
+  nama_homepage = prompt("Masukkan nama anda");
 
-//   if (nama_homepage === null || nama_homepage === "") {
-//     alert("Mohon untuk masukkan nama terlebih dahulu");
-//   } else {
-//     document.getElementById("home-name").innerHTML = nama_homepage;
-//   }
-// } while (nama_homepage === null || nama_homepage === "");
+  if (nama_homepage === null || nama_homepage === "") {
+    alert("Mohon untuk masukkan nama terlebih dahulu");
+  } else {
+    document.getElementById("home-name").innerHTML = nama_homepage;
+  }
+} while (nama_homepage === null || nama_homepage === "");
 
-// form validation
-
-// let date_input = Date();
-// document.getElementById("submit-button").addEventListener("click", date);
-// function date() {
-//   document.getElementById("date_input").innerHTML = date_input;
-// }
-
-// let nama_input = document.getElementById("nama_input");
-// document.getElementById("submit-button").addEventListener("click", nama);
-// function nama() {
-//   document.getElementById("nama-user").innerHTML = nama_input.value;
-// }
-
-// let tgl_lahir_input = document.getElementById("tgl_lahir_input");
-// document.getElementById("submit-button").addEventListener("click", tgl_lahir);
-// function tgl_lahir() {
-//   document.getElementById("tgl_lahir_user").innerHTML = tgl_lahir_input.value;
-// }
-
-// let laki_laki_input = document.getElementById("laki_laki_input");
-// let perempuan_input = document.getElementById("perempuan_input");
-// document
-//   .getElementById("submit-button")
-//   .addEventListener("click", jenis_kelamin);
-// function jenis_kelamin() {
-//   if (laki_laki_input.checked == true) {
-//     document.getElementById("jenis_kelamin_user").innerHTML =
-//       laki_laki_input.value;
-//   } else {
-//     document.getElementById("jenis_kelamin_user").innerHTML =
-//       perempuan_input.value;
-//   }
-// }
-
-// let text_pesan = document.getElementById("pesan_input");
-// document.getElementById("submit-button").addEventListener("click", pesan);
-// function pesan() {
-//   document.getElementById("pesan-user").innerHTML = text_pesan.value;
-// }
-
-// Tutup
+// Message-us
 
 document.getElementById("submit-button").addEventListener("click", submitForm);
 
@@ -80,3 +39,25 @@ function submitForm() {
   }
   return false;
 }
+
+// Carousel
+let slideIndex = 1;
+showSlide(slideIndex);
+
+function nextSlide(n) {
+  showSlide((slideIndex += n));
+}
+
+function showSlide(n) {
+  let img_item = document.getElementsByClassName("img-item");
+  if (n > img_item.length) slideIndex = 1;
+  let i = 0;
+  while (i < img_item.length) {
+    img_item[i].style.display = "none";
+    i++;
+  }
+  img_item[slideIndex - 1].style.display = "block";
+  console.log(slideIndex);
+}
+
+const slideInterval = setInterval(() => nextSlide(1), 4000);
