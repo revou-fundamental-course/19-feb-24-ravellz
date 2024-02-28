@@ -124,32 +124,28 @@
         <div class="table-container">
           <h1>Message Us</h1>
           <table>
-            <form>
+            <form name="message-us-form">
               <tr>
                 <td>
-                  <label for="nama">Nama <span>:</span></label>
+                  <label for="nama_input">Nama <span>:</span></label>
                 </td>
                 <td>
                   <input
                     required
                     type="text"
-                    id="nama"
-                    name="nama"
+                    name="nama_input"
                     placeholder="Nama"
                   />
                 </td>
               </tr>
               <tr>
                 <td>
-                  <label for="tgl-lahir">Tanggal lahir <span>:</span></label>
+                  <label for="tgl_lahir_input"
+                    >Tanggal lahir <span>:</span></label
+                  >
                 </td>
                 <td>
-                  <input
-                    type="text"
-                    id="tgl-lahir"
-                    name="tgl-lahir"
-                    placeholder="Masukkan tanggal lahir"
-                  />
+                  <input type="date" name="tgl_lahir_input" />
                 </td>
               </tr>
               <tr>
@@ -160,21 +156,23 @@
                 </td>
                 <td>
                   <input
-                    class="jenis-kelamin"
+                    class="laki_laki_input"
                     type="radio"
-                    id="jenis-kelamin"
-                    name="jenis-kelamin"
-                    value="laki-laki"
+                    name="jenis_kelamin_input"
+                    value="Laki-laki"
                   />
-                  <label class="jenis-kelamin" for="laki-laki">Laki-laki</label>
+                  <label class="laki_laki_input" for="laki-laki"
+                    >Laki-laki</label
+                  >
                   <input
-                    class="jenis-kelamin"
+                    class="perempuan_input"
                     type="radio"
-                    id="jenis-kelamin"
-                    name="jenis-kelamin"
-                    value="perempuan"
+                    name="jenis_kelamin_input"
+                    value="Perempuan"
                   />
-                  <label class="jenis-kelamin" for="perempuan">Perempuan</label>
+                  <label class="perempuan_input" for="perempuan"
+                    >Perempuan</label
+                  >
                 </td>
               </tr>
               <tr>
@@ -185,15 +183,16 @@
                   <input
                     class="pesan"
                     type="text"
-                    id="pesan"
-                    name="pesan"
+                    name="pesan_input"
                     placeholder="Pesan"
                   />
                 </td>
               </tr>
               <tr>
                 <td colspan="2" class="submit">
-                  <input type="submit" value="submit" />
+                  <button id="submit-button" type="button" value="submit">
+                    Submit
+                  </button>
                 </td>
               </tr>
             </form>
@@ -201,12 +200,12 @@
         </div>
         <div class="result-container">
           <div class="result-content-container">
-            <p>Current time :</p>
+            <p>Current time : <span id="date_user"></span></p>
             <br />
-            <p>Nama :</p>
-            <p>Tanggal Lahir :</p>
-            <p>Jenis Kelamin :</p>
-            <p>Pesan :</p>
+            <p>Nama : <span id="nama_user"></span></p>
+            <p>Tanggal Lahir : <span id="tgl_lahir_user"></span></p>
+            <p>Jenis Kelamin : <span id="jenis_kelamin_user"></span></p>
+            <p>Pesan : <span id="pesan-user"></span></p>
           </div>
         </div>
       </div>

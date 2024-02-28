@@ -2,7 +2,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --red: rgba(38, 35, 34, 1);
   --red-navbar: rgba(193, 0, 45, 1);
-  --vanilla: #f5d4b7
+  --vanilla: #f5d4b7;
 }
 
 html,
@@ -437,7 +437,8 @@ table {
   justify-content: space-between;
 }
 
-.table-container td .jenis-kelamin {
+.table-container td .laki_laki_input,
+.table-container td .perempuan_input {
   display: inline;
   width: auto;
 }
@@ -456,6 +457,10 @@ table {
 .table-container .submit {
   width: 100%;
   padding-top: 1rem;
+}
+
+.table-container .submit button {
+  width: 100%;
 }
 
 .result-container {
