@@ -551,7 +551,7 @@ table {
     border-left: 4px solid var(--black);
     border-top: 4px solid var(--black);
     height: 100vh;
-    width: 15rem;
+    width: clamp(10rem, 48vw, 15rem);
     margin: 0;
     flex-direction: column;
     background-color: var(--red-navbar);
@@ -564,7 +564,8 @@ table {
 
   .nav-link-container a {
     display: flex;
-    width: 100%;
+    font-size: clamp(1.1rem, 5vw, 1.2rem);
+    width: clamp(10rem, 48vw, 15rem);
     box-sizing: border-box;
     justify-content: center;
   }
@@ -658,17 +659,5 @@ table {
 
   .portfolio-container .headquarter-container {
     height: auto;
-  }
-}
-
-@media (max-width: 402px) {
-  .nav-link-container a {
-    border: 1px solid #fff;
-    box-sizing: border-box;
-    height: 3rem;
-  }
-
-  .nav-link-container .middle {
-    padding: 0.3rem clamp(5px, 2vw, 15px);
   }
 }
