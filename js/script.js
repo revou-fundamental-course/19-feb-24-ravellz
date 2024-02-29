@@ -1,15 +1,15 @@
 // Fungsi nama di homepage
 
-let nama_homepage;
-do {
-  nama_homepage = prompt("Masukkan nama anda");
+// let nama_homepage;
+// do {
+//   nama_homepage = prompt("Masukkan nama anda");
 
-  if (nama_homepage === null || nama_homepage === "") {
-    alert("Mohon untuk masukkan nama terlebih dahulu");
-  } else {
-    document.getElementById("home-name").innerHTML = nama_homepage;
-  }
-} while (nama_homepage === null || nama_homepage === "");
+//   if (nama_homepage === null || nama_homepage === "") {
+//     alert("Mohon untuk masukkan nama terlebih dahulu");
+//   } else {
+//     document.getElementById("home-name").innerHTML = nama_homepage;
+//   }
+// } while (nama_homepage === null || nama_homepage === "");
 
 // Message-us
 
