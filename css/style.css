@@ -232,7 +232,7 @@ table {
 }
 
 .carousel-container .img-item {
-  width: clamp(15rem, 60vw + 3rem, 30rem);
+  width: clamp(16rem, 60vw + 3rem, 30rem);
   aspect-ratio: 13/9;
   border: 2px solid #fff;
   border-radius: 7px;
@@ -519,7 +519,8 @@ table {
 }
 
 .footer h1 {
-  margin-right: 2rem;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  margin-right: clamp(0.3rem, 2vw, 2rem);
 }
 
 /* Media Queries */
@@ -618,6 +619,33 @@ table {
   }
 }
 
+@media (max-width: 639px) {
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .nav-link-container a {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    padding: 1rem clamp(5px, 2vw, 15px);
+  }
+
+  .nav-container .img-container {
+    margin: 0.7rem 0 0.1rem 0;
+  }
+
+  .our-profile-container {
+    margin-top: 4rem;
+  }
+
+  .portfolio-container {
+    margin-top: 4.5rem;
+  }
+
+  .message-us-container {
+    margin-top: 1.5rem;
+  }
+}
+
 @media (max-width: 528px) {
   .headquarter-container .headquarter-item {
     margin: 1rem 0;
@@ -625,5 +653,17 @@ table {
 
   .portfolio-container .headquarter-container {
     height: auto;
+  }
+}
+
+@media (max-width: 402px) {
+  .nav-link-container a {
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    height: 3rem;
+  }
+
+  .nav-link-container .middle {
+    padding: 0.3rem clamp(5px, 2vw, 15px);
   }
 }
