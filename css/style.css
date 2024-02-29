@@ -156,6 +156,7 @@ table {
   left: 0;
   right: 0;
   z-index: 999;
+  height: 51.2px;
   background-color: #c1002d;
 }
 
